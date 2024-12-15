@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(90deg, rgba(246,65,0,1) 31%, rgba(246,111,0,1) 50%, rgba(246,135,43,1) 62%, rgba(255,252,0,1) 100%);
+
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header */
+.header {
+    text-align: center;
+}
+
+.title {
+    font-size: 42px;
+    color: #fff;
+}
+
+.author {
+    font-size: 18px;
+    color: #000;
+}
+
+/* Calculator */
+.calculator {
+    width: 470px;
+    height: 680px;
+
+    margin: 50px auto;
+    padding: 10px;
+
+    border-radius: 20px;
+
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+    background-color: #000;
+
+}
+
+/* Display */
+.display {
+    color: #fff;
+    font-size: 70px;
+    text-align: end;
+
+    padding-top: 20px;
+}
+
+/* Button */
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Classic btn */
+.button {
+    width: 22%;
+
+    padding: 28px 30px;
+    margin: 10px 6px;
+
+    color: #fff;
+    font-size: 30px;
+
+    border: none;
+    border-radius: 50px;
+
+    background-color: rgba(128, 128, 128, 0.372);
+
+    cursor: pointer;
+
+    transition: background-color .1s linear;
+}
+
+.button:hover {
+    background-color: rgba(117, 117, 117, 0.372);
+}
+
+.button:active {
+    background-color: rgba(92, 92, 92, 0.372);
+}
+
+/* Zero btn */
+.zero-btn {
+    width: 46.66666%;
+    /* padding: 30px 190px 26px 20px; */
+
+    text-align: left;
+}
+
+/* Orange btn */
+.btn-orange {
+    background-color: orange;
+}
+
+.btn-orange:hover {
+    background-color: rgb(198, 131, 6);
+}
+
+.btn-orange:hover {
+    background-color: rgb(198, 131, 6);
+}
+
+/* Grey btn */
+.btn-grey {
+    background-color: gray;
+}
+
+.btn-grey:hover {
+    background-color: rgba(255, 255, 255, 0.372)
+}
+
+.btn-grey:active {
+    background-color: rgba(160, 160, 160, 0.372)
+}
