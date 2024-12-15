@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header class="header">
+        <h2 class="title">ToDo</h2>
+        <p class="author">Created by Nikolaichik Alexey</p>
+    </header>
+
+    <div class="todo">
+        <button class="button add-btn" id="add">
+            Add item
+        </button>
+        
+        <div class="item">
+            <input type="checkbox" class="item-completed">
+            <input type="text" class="item-description" placeholder="Write your task..." value="">
+            <button class="button add-item">+</button>
+        </div>
+
+        <div id="items">
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
