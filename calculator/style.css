@@ -45,6 +45,8 @@ body {
 
 /* Display */
 .display {
+    word-break: break-all;
+
     color: #fff;
     font-size: 70px;
     text-align: end;
