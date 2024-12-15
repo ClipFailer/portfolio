@@ -12,9 +12,16 @@ buttons.forEach(button => {
 
             case '=':
                 try {
-                    display.innerText = eval(display.innerText);
+                    let result = eval(display.innerText).toString();
+                    if (result.indexOf('.') > -1) {
+                        display.innerText = cutNum(result);
+                    } else {
+                        display.innerText = result;
+                    }
+                     
+                    
                 } catch(e) {
-                    display.innerText = 'Error';
+                    display.innerText = e;
                 }
                 break;
 
@@ -36,4 +43,15 @@ buttons.forEach(button => {
                 
         }
     });
+
+    
 })
+
+function cutNum(num) { 
+    let decimal = num.split('.');
+    if (decimal[1].length > 4) {
+        num = decimal[0] + '.' + decimal[1].slice(0, 4);
+        return num;
+    } 
+    return display.innerText;
+}
