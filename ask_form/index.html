@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Задать вопрос</title>
+    </head>
+    <body>
+        <div class="container">
+            <button class="button"
+                    id="open-mf-btn">
+                Задать вопрос
+            </button>
+            <div class="overlay" id="mf">
+                <div class="modal-form">
+                    <div class="modal__inner">
+                        <button class="modal__close-btn" id="close-mf-btn">
+                        </button>
+                        <h1 class="modal-form__header">
+                            Задать вопрос
+                        </h1>
+                        <form action="">
+                            <input 
+                                type="text" 
+                                name="post-name" 
+                                placeholder="Имя"
+                                class="modal-form__input">
+                            <input 
+                                class="modal-form__input"   
+                                required
+                                type="tel" 
+                                name="post-tel" 
+                                placeholder='Номер телефона*'>
+                            <input 
+                                class="modal-form__input"   
+                                required
+                                type="email" 
+                                name="post-email" 
+                                placeholder='Email*'>
+                            <input 
+                                class="modal-form__input"   
+                                type="text" 
+                                name="post-interests" 
+                                placeholder='Интересующий товар/услуга'>
+                            <textarea 
+                                class="modal-form__input modal-form__input--message"   
+                                required
+                                type="text" 
+                                name="post-message" 
+                                placeholder='Сообщение*'></textarea>
+                            <div class="conditions">
+                                <input required type="checkbox">
+                                <p class="conditions__text">Отправляя заявку Вы соглашаетесь с политикой конфиденциальности</p>
+                            </div>
+                            <input type="submit" class="button" id="modal-submit">
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="overlay" id="success_modal">
+                <div class="modal-success">
+                    <div class="modal-success__inner">
+                        <button class="modal__close-btn" id="close-success-modal-btn">
+                        </button>
+                        <img src="./static/images/success.png" alt="">
+                        <h1 class="modal-success__header">
+                            Спасибо !
+                        </h1>
+                        <p class="modal-success__text">
+                            Ваше сообщение отправлено мы свяжемся с вами в ближайшее время
+                        </p>
+                        <button class="button" id="back-success-modal-btn">Вернуться назад</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="main.js"></script>
+    </body>
+</html>
