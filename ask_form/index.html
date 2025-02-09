@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задать вопрос</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <main class="main">
+
+        <button class="btn" id="show-modal-btn">
+            Задать вопрос
+        </button>
+
+ 
+
+        <div class="modal">
+            <div class="modal__form">
+                <button class="close-modal-btn">X</button>
+
+                <h2 class="form__title">Обратная связь</h2>
+
+                <hr/>
+
+                <form action="">
+
+                    <label for="name" class="form__label">
+                        Имя
+                    </label>
+                    <input type="text" placeholder="Введите имя" id="name">
+
+                    <label for="email" class="form__label">
+                        Почта
+                    </label>
+                    <input 
+                        type="text" 
+                        placeholder="Введите почту" 
+                        id="email"
+                        required
+                        >
+
+                    <label for="message" class="form__label">
+                        Сообщение
+                    </label>
+                    <textarea class="form__textarea" name="message" placeholder="Введите сообщение" id="message"></textarea>
+
+                    <button class="btn" id="submit-btn">Отправить</button>
+
+                </form>
+            </div>
+            
+
+            </button>
+        </div>
+
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

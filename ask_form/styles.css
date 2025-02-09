@@ -1,0 +1,148 @@
+@import url('fonts/fonts.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Montserrat';
+    font-size: 16px;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100vh;
+}
+
+/* Кнопка включения модального окна */
+.btn {
+    max-width: 285px;
+    width: 100%;
+
+    margin: 0 auto;
+    padding: 10px 15px;
+
+    border-radius: 12px;
+    border: none;
+
+    box-shadow: 1px 2px 10px #000;
+
+    font-weight: 700;
+
+    background-color: rgb(255, 247, 5);
+
+    cursor: pointer;
+
+    transition: all .2s ease-in;
+
+    &:hover {
+        background-color: rgb(216, 209, 2);
+
+        box-shadow: 1px 2px 15px #000;
+    }
+}
+
+/* Модальное окно */
+.modal {
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background-color: #74717151;
+}
+
+.modal.active {
+    display: flex;
+}
+
+.modal__form {
+    position: relative;
+
+    max-width: 600px;
+    width: 100%;
+    height: 600px;
+
+    margin: 10px;
+    padding: 10px;
+
+    border-radius: 12px;
+
+    background-color: aliceblue;
+
+    box-shadow: 1px 2px 15px #000;
+}
+
+.close-modal-btn {
+    position: absolute;
+    right: 10px;
+
+    color: #ff0000;
+    font-weight: 700;
+
+    width: 20px;
+    height: 20px;
+
+    border: none;
+    background-color: transparent;
+
+    cursor: pointer;
+
+    transition: all .2s ease-in;
+
+    &:hover {
+        color: #000;
+    }
+}
+
+.modal__form form {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+
+    margin-top: 20px;
+}
+
+.form__title {
+
+    text-align: center;
+    font-size: 24px;
+    
+    margin-bottom: 20px;
+}
+
+.form__label {
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+input,
+.form__textarea {
+    padding: 10px;
+
+    border: 1px solid #787474;
+    border-radius: 12px 12px 0 0;
+    background-color: #00000009;
+
+    margin: 15px 0;
+
+    &:focus {
+        background-color: #f2f2f276;
+    }
+}
+
+.form__textarea {
+    max-width: 585px;
+    width: 100%;
+    height: 200px;
+}

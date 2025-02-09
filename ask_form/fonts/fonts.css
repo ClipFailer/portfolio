@@ -1,0 +1,23 @@
+@font-face {
+    font-family: "Montserrat";
+    font-weight: 300;
+    src: url('./Montserrat-Light.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: "Montserrat";
+    font-weight: 700;
+    src: url('./Montserrat-Bold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: "Yantramanav";
+    font-weight: 300;
+    src: url('./Yantramanav-Light.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: "Yantramanav";
+    font-weight: 700;
+    src: url('./Yantramanav-Bold.woff2') format('woff2');
+}
